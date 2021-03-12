@@ -8,11 +8,7 @@ console.log(ans1);
 
 let ans2 = (x + y) * z;
 console.log(ans2);
-
-// () * / + -
-
-let ans3 = y * z + x;
-console.log(ans3);
-
-let ans4 = (y * z) + x;
-console.log(ans4);
+// 優先順位
+// ()
+// * /
+// + -
