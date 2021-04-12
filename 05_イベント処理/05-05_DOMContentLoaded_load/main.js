@@ -4,7 +4,7 @@
 // DOMContentLoadedイベントが発生したら、alertダイアログを表示する。
 // loadイベントが発生したら、「Now Loading...」を非表示にする
 
-// DOMCOntentLoaded
+// DOMContentLoaded
 document.addEventListener('DOMContentLoaded', function() {
   alert('DOMContentLoaded!');
 }, false);
