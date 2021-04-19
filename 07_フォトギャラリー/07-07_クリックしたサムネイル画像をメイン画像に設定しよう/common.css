@@ -1,0 +1,20 @@
+body {
+  background-color: #555;
+  text-align: center;
+  color: #fff;
+}
+
+main {
+  padding-top: 30px;
+}
+
+#main_image img {
+  width: 600px;
+  border: 5px solid #fff;
+}
+
+#thumbnails img {
+  width: 80px;
+  margin: 10px;
+  border: 1px solid #fff;
+}
