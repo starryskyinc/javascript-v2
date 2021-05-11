@@ -9,7 +9,7 @@ console.log(20 > 28);
 
 // 以上
 let a = 100;
-if (a => 100) {
+if (a >= 100) {
   console.log('100以上');
 }
 
