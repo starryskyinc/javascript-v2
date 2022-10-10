@@ -1,15 +1,17 @@
 'use strict';
 // 演習：数取器のプログラム
 let num = 0;
-function updateCounter(n) {
+
+function updateCounter(num) {
   const counter = document.getElementById('counter');
-  counter.textContent = n;
+  counter.textContent = num;
 }
+
 function countUp() {
   num++;
   // const counter = document.getElementById('counter');
   // counter.textContent = num;
-  updateCounter(num);
+  updateCounter(num)
 }
 
 function reset() {
@@ -19,6 +21,12 @@ function reset() {
   updateCounter(num);
 }
 
-countUpButton.addEventListener('click', countUp, false);
-resetButton.addEventListener('click', reset, false);
+const countUpBtn = document.getElementById('countUpButton');
+countUpBtn.addEventListener('click', countUp, false);
+
+const resetBtn = document.getElementById('resetButton');
+resetBtn.addEventListener('click', reset, false);
+
+
+
 

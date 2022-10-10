@@ -1,20 +1,32 @@
 'use strict';
-// イベントハンドラ
-function handleChange() {
-  // 「すべてにチェックボックス」の要素を取得
-  const checkAll = document.getElementById('checkAll');
-  // name属性がlanguageのチェックボックス要素を取得
-  const checkBoxes = document.getElementsByName('language');
-  // name属性がlanguageのチェックボックス要素をループ処理
-  for(let i = 0; i < checkBoxes.length; i++){
-    // 各チェックボックスのチェック状態を、
-    //「すべてチェック」の状態に合わせる
-    checkBoxes[i].checked = checkAll.checked;
-  }
-   
+// 演習：数取器のプログラム
+let num = 0;
+
+function updateCounter(num) {
+  const counter = document.getElementById('counter');
+  counter.textContent = num;
 }
 
-// checkAllチェックボックスのchangeイベントのイベントハンドラを登録
-const ca = document.getElementById('checkAll');
-ca.addEventListener('change', handleChange, false);
+function countUp() {
+  num++;
+  // const counter = document.getElementById('counter');
+  // counter.textContent = num;
+  updateCounter(num)
+}
+
+function reset() {
+  num = 0;
+  // const counter = document.getElementById('counter');
+  // counter.textContent = num;
+  updateCounter(num);
+}
+
+const countUpBtn = document.getElementById('countUpButton');
+countUpBtn.addEventListener('click', countUp, false);
+
+const resetBtn = document.getElementById('resetButton');
+resetBtn.addEventListener('click', reset, false);
+
+
+
 
