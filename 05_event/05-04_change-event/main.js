@@ -14,5 +14,7 @@ function handleChange() {
    
 }
 
-// checkAllボタンのchangeイベントのイベントハンドラを登録
-checkAll.addEventListener('change', handleChange, false);
+// checkAllチェックボックスのchangeイベントのイベントハンドラを登録
+const ca = document.getElementById('checkAll');
+ca.addEventListener('change', handleChange, false);
+
