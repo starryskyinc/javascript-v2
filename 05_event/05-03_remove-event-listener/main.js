@@ -6,9 +6,9 @@ function sayHelloEventHandler(e) {
 sayHelloButton.addEventListener('click', sayHelloEventHandler, false);
 
 const removeEventHandelrButton = document.getElementById('removeEventHandlerButton');
-function removeEventHander(e) {
+function removeEventHandler(e) {
   console.log('remove');
   sayHelloButton.removeEventListener('click', sayHelloEventHandler, false);
 }
-removeEventHandelrButton.addEventListener('click', removeEventHander, false);
+removeEventHandelrButton.addEventListener('click', removeEventHandler, false);
 
