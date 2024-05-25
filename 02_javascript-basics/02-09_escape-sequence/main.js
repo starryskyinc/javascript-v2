@@ -1,6 +1,6 @@
 'use strict';
 console.log('Hello! I\'m Yuta Nakamura.');
-console.log('\¥ \t AAA \n BBB');
+console.log('\t AAA \n BBB');
 
 // 補足
 console.log("Hello! I'm Yuta Nakamura.");
